@@ -611,7 +611,7 @@ function requestRegisterApi(callback){
   generateSubmitKeyPairs(account_name, password_ary.join(""));
 
   //  请求注册接口
-  $.ajax("https://f.weaccount.cn/v1/chain/register", {
+  $.ajax("https://f.api.btspp.io:10200/v1/chain/register", {
     type: "post",
     data: _submit_data,
     crossDomain: true,
